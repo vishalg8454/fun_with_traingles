@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+body{
+    margin: 0;
+    font-family: 'Concert One';
+}
+header {
+    margin: 0;
+    border: 2px solid #EC4899;
+    background-color: #EC4899;
+}
+a{
+    /* color: blue; */
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    text-align: right;
+    font-size: large;
+}
+h1{
+    padding: 0px 10px;
+}
+div{
+    text-align: center;
+}
+.quiz-para{
+    color: #EC4899;
+    text-align: left;
+    padding-left: 10px;
+    font-size: x-large;
+}
+.quiz-radio{
+    text-align: left;
+    margin: 10px;
+    display: inline;
+}
+.quiz-label{
+    text-align: left;
+    margin-left: 10px;
+    display: block;
+    color: black;
+}
+.question-container{
+    display: block;
+    color: blue;
+}
+#quizOutputPara{
+    font-size: x-large;
+    text-align: center;
+}
+#submitBtn{
+    margin: 20px;
+    padding: 5px 10px;
+}
+input{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    border-color: #EC4899;
+    border: 2px solid #EC4899;
+    border-radius: 10px;
+}
+label{
+    /* margin: 10px 100px; */
+    font-size: x-large;
+    color: #EC4899;
+}
+button{
+    padding: 5px 10px;
+    background-color: #EC4899;
+    border: 0;
+    border-radius: 6px;
+}
+button:hover{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    border: 2px solid #EC4899;
+    border-radius: 6px;
+}
+header div{
+    color:red;
+    padding: 10px;
+    text-align: right;
+}
+p{
+    font-size: x-large;
+}
