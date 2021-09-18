@@ -11,7 +11,7 @@ function clickHandler(){
     if(heightLength === 0 || baseLength === 0){
         showMessage("Enter both values");
     }else{
-        showMessage("The area is: " + calculateArea(heightLength,baseLength));
+        showMessage("The area is: " + calculateArea(heightLength,baseLength) + " sq.units");
     }
 }
 function calculateArea(height, base){

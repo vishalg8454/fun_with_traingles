@@ -11,7 +11,7 @@ function clickHandler() {
     if(baseLength === 0 || heightLength === 0){
         showMessage("Enter both sides length");
     }else{
-        showMessage("The hypotenuse length is " + calculateHypotenuse(baseLength,heightLength));
+        showMessage("The hypotenuse length is " + calculateHypotenuse(baseLength,heightLength)+"units");
     }
     
 }
@@ -19,5 +19,5 @@ function showMessage(msg) {
     txtOutput.innerText = msg;
 }
 function calculateHypotenuse(base, height) {
-    return Math.sqrt((base * base) + (height * height));
+     return Math.sqrt((base * base) + (height * height)).toFixed(2);
 }
