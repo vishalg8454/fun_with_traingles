@@ -10,6 +10,8 @@ function clickHandler(){
     var baseLength = Number(baseInput.value);
     if(heightLength === 0 || baseLength === 0){
         showMessage("Enter both values");
+    } else if (baseLength < 0 || heightLength < 0 ) {
+        showMessage("Enter valid values");
     }else{
         showMessage("The area is: " + calculateArea(heightLength,baseLength) + " sq.units");
     }

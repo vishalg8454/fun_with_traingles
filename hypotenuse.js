@@ -10,6 +10,8 @@ function clickHandler() {
     var heightLength = Number(heightInput.value);
     if(baseLength === 0 || heightLength === 0){
         showMessage("Enter both sides length");
+    } else if (baseLength < 0 || heightLength < 0 ) {
+        showMessage("Enter valid values");
     }else{
         showMessage("The hypotenuse length is " + calculateHypotenuse(baseLength,heightLength)+"units");
     }

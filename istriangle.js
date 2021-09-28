@@ -14,15 +14,18 @@ function clickHandler() {
 
     if (firstAngle === 0 || secondAngle === 0 || thirdAngle === 0) {
         showMessage("Enter all sides");
-    } else if(calculateSum(firstAngle,secondAngle,thirdAngle) === 180){
+    } else if (firstAngle < 0 || secondAngle < 0 || thirdAngle < 0) {
+        showMessage("Enter valid values");
+    }
+    else if (calculateSum(firstAngle, secondAngle, thirdAngle) === 180) {
         showMessage("Valid Triangle");
-    }else{
+    } else {
         showMessage("Invalid Triangle");
     }
 }
 function calculateSum(angleOne, angleTwo, angleThree) {
     return angleOne + angleTwo + angleThree;
 }
-function showMessage(msg){
+function showMessage(msg) {
     txtOutput.textContent = msg;
 }
